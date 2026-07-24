@@ -1,0 +1,29 @@
+:root {
+    /* COLOUR PALETTE HEX */
+    --granite: #3f4b3bff; /* background color */
+    --hunter-green: #44633fff; /* header color */
+    --sea-green: #5a9367ff; 
+    --mint-leaf: #5cab7dff;
+    --turquoise: #4adbc8ff;
+}
+
+body {
+    background-color: var(--granite);
+    color: white;
+    margin: 0;
+}
+
+header {
+    background-color: var(--hunter-green);
+    transition: filter 0.3s ease-in-out;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+    overflow: hidden;
+}
+
+header:hover {
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+header h2 {
+    margin-left: 10px;
+}
