@@ -44,12 +44,11 @@ nav {
     display: flex;
     float: right
 }
-
-.title {
-    margin-left: 10px;
-}
-
 footer {
     color: #CCCCCC;
     text-align: center;
+}
+
+.margin-left-10px {
+    margin-left: 10px;
 }
