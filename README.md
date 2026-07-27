@@ -2,3 +2,5 @@
 
 ## Identifying and Defining
 Divergent and Convergent Mindmaps on Excalidraw
+
+![Divergent Mindmap](images/divergent_influence_mindmap.png)
