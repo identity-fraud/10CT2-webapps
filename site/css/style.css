@@ -2,23 +2,38 @@
     /* COLOUR PALETTE HEX */
     --granite: #3f4b3bff; /* background color */
     --hunter-green: #44633fff; /* header color */
+    --text-primary: white;
+    --text-secondary: #CCCCCC;
     --sea-green: #5a9367ff; 
     --mint-leaf: #5cab7dff;
     --turquoise: #4adbc8ff;
+    --icon-invert: 1;
+}
+
+[data-theme="light"] {
+    --granite: white;
+    --hunter-green: #8df6da;
+    --text-primary: #1c231b;
+    --text-secondary: #555555;
+    --icon-invert: 0;
 }
 
 body {
     background-color: var(--granite);
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    margin: 0;
+    color: var(--text-primary);
+    margin: 10px;
 }
 
 header {
     background-color: var(--hunter-green);
     filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
     overflow: hidden;
-    color: #CCCCCC;
+    color: var(--text-secondary)
+}
+
+#toggle-icon {
+    filter: brightness(0) invert(var(--icon-invert));
 }
 
 header h2 {
@@ -32,7 +47,7 @@ header h4 {
 }
 
 header a:link, a:visited {
-    color: white;
+    color: var(--text-primary);
     text-decoration: none;
 }
 
@@ -45,9 +60,22 @@ nav {
     float: right
 }
 
+#theme-toggle {
+    background-color: transparent; 
+    border: none;
+    margin-right: 5px;
+}
+
+.body-container {
+    margin-left: 10px;
+}
+
 footer {
-    color: #CCCCCC;
     text-align: center;
+}
+
+footer p {
+    color: var(--text-secondary)
 }
 
 .margin-left-10px {

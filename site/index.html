@@ -13,6 +13,10 @@
         <header>
             <h2>identity fraud's website</h2>
             <nav>
+                <button id="theme-toggle">
+                    <img id="toggle-icon" src="assets/night.png" width="20" height="20" onclick="themeToggle()">
+                </button>
+                <h4>|</h4>
                 <h4><a href="index.html">Home</a></h4>
                 <h4>|</h4>
                 <h4><a href="https://github.com/identity-fraud/10CT2-webapps">Github</a></h4>
@@ -22,8 +26,11 @@
                 <h4><a href="copyrightnotice.html">Copyright Notice</a></h4>
             </nav>
         </header>
-        <h2 class="margin-left-10px">Home</h2>
+        <div class="body-container">
+            <h2>Home</h2>
+        </div>
         <footer>
+            <hr>
             <div id="wcb" class="carbonbadge wcb-d"></div>
             <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
             <p>© 2026 identity-fraud. Released under MIT License</p>
